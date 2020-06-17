@@ -1,0 +1,182 @@
+/* Font Family Set */
+@font-face{
+    font-family:"Gilmer Bold";
+    src:url('/assets/fonts/Gilmer-Bold.ttf') 
+    format("truetype")}
+
+@font-face{
+    font-family:"Gilmer Medium";
+    src:url('/assets/fonts/Gilmer-Regular.ttf') 
+    format("truetype")
+}
+    
+@font-face{
+    font-family:"Gilmer Light";
+    src:url('/assets/fonts/Gilmer-Light.ttf') 
+    format("truetype")
+}
+    
+@font-face{
+    font-family:"Gilmer Heavy";
+    src:url('/assets/fonts/Gilmer-Heavy.ttf') 
+    format("truetype")
+}
+    
+@font-face{
+    font-family:"Karla Regular";
+    src:url('/assets/fonts/Karla-Regular.ttf') 
+    format("truetype")
+}
+
+h1,h2,h3,h4,h5,h6{
+    font-family:"Gilmer Bold"
+}
+
+p,
+a,
+label,
+.form-control{
+    font-family:"Gilmer Medium"
+}
+
+b,
+strong{
+    font-family:"Gilmer Bold";
+    font-weight:unset !important
+}
+/* End Font Family */
+
+/* All About Transition */
+a{
+    transition:all .3s;
+    outline:none
+}
+
+.lazyloaded {
+    opacity: 1;
+    transition: opacity .3s;
+}
+/* End All About Transition */
+
+/* Sizing */
+h3{
+    font-size: 1.75rem;
+}
+/* End Sizing */
+
+/* Coloring */
+.bg-primary-default{
+    background-color: #f7f5f2;
+}
+
+.boxv h3{
+    color: #ffffff;
+}
+/* End Coloring */
+
+.navbar-nav{
+    margin-top: 1em;
+}
+
+.navbar-custom#sideNav  .navbar-collapse{
+    padding: 0;
+}
+
+.navbar-custom .navbar-nav .nav-link.text-orange,
+.navbar-custom .navbar-nav .show > .nav-link.text-orange, 
+.navbar-custom .navbar-nav .active > .nav-link.text-orange, 
+.navbar-custom .navbar-nav .nav-link.show.text-orange, 
+.navbar-custom .navbar-nav .nav-link.active.text-orange{
+    color: #f47f29;
+}
+
+/* Text Transform on Menu */
+#sideNav .navbar-nav .nav-item .nav-link{
+    text-transform: none;
+}
+
+/* NAVIGATION */
+li.nav-item{
+    padding: .5em 0;
+}
+li.nav-item:hover {
+    margin-right: -3px;
+    background: #e1d8cc;
+    cursor: pointer;
+    transition: all .3s;
+    border-right: 3px solid #8c8c3f;
+    padding-left: 1em;
+}
+
+/* TOP NAVIGATION */
+/* Small Logo On Top Navigation */
+.small-logo{
+    max-width: 4em;
+    max-height: 4em;
+}
+
+/* Button Toggler */
+.navbar-custom .navbar-toggler.menu,
+.navbar-custom .navbar-toggler.search,
+.navbar-dark .navbar-toggler.menu,
+.navbar-dark .navbar-toggler.search{
+    border: 0;
+}
+
+/* Search */
+.navbar-search-icon {
+    display: inline-block;
+    width: 1.5em;
+    height: 1.5em;
+    vertical-align: middle;
+    content: "";
+    background: no-repeat center center;
+    background-size: 100% 100%;
+}
+
+.navbar-custom .navbar-search-icon {
+    background-image: url("/assets/icon/search.svg");
+}
+
+
+.navbar-custom .navbar-toggler-icon {
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' width='30' height='30' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%28244, 127, 41, 1%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+}
+/* END TOP NAVIGATION */
+
+
+/* Media Query */
+@media (min-width: 992px)
+{
+    body{
+        padding-left: 0;
+    }
+    
+    #sideNav {
+        width: 14rem;
+        border-right: 1px solid;
+    }
+
+    #sideNav .navbar-brand {
+        margin: 0;
+    }
+
+    #sideNav .navbar-brand .img-profile{
+        max-width: 7em;
+        max-height: 7em;
+    }
+
+    .navbar-custom#sideNav,
+    .navbar-custom#sideNav  .navbar-collapse{
+        padding: 0;
+    }
+
+    li.nav-item:hover{
+        padding-left: 0;
+    }
+
+    section.resume-section{
+        padding:0;
+        margin-left: 14em;
+    }
+}
